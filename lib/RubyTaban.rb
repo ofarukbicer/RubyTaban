@@ -56,7 +56,9 @@ class RubyTaban
 
   def hata_salla(hata)
     zaman = Time.new.strftime("%k:%M:%S")
-    zaman[" "] = "0"
+    if zaman[" "]
+      zaman[" "] = "0"
+    end
 
     bicimlendir = "[#{zaman}]".cyan + " #{hata.class.name}".yellow + "  || ".magenta + "#{hata.message}"
     puts bicimlendir

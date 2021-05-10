@@ -1,0 +1,21 @@
+PATH
+  remote: .
+  specs:
+    RubyTaban (1.0.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    colorize (0.8.1)
+    ruby_figlet (0.6.1)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  RubyTaban!
+  colorize (~> 0.8.1)
+  ruby_figlet (~> 0.6.1)
+
+BUNDLED WITH
+   2.2.17

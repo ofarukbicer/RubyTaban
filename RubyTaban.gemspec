@@ -9,4 +9,7 @@ Gem::Specification.new do |s|
   s.homepage    =
     'https://github.com/ofarukbicer/RubyTaban'
   s.license       = 'MIT'
+
+  s.add_development_dependency 'ruby_figlet', '~> 0.6.1'
+  s.add_development_dependency 'colorize', '~> 0.8.1'
 end

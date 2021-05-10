@@ -1,19 +1,5 @@
-begin
-  require 'colorize'
-rescue LoadError
-  system "gem install colorize"
-  puts "colorize kütüphanesi kuruldu yeniden başlatın"
-  exit
-end
-
-begin
-  require 'ruby_figlet'
-rescue LoadError
-  system "gem install ruby_figlet"
-  puts "colorize kütüphanesi kuruldu yeniden başlatın"
-  exit
-end
-
+require 'ruby_figlet'
+require 'colorize'
 require 'uri'
 require 'net/http'
 require 'json'

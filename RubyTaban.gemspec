@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'RubyTaban'
-  s.version     = '1.1.0'
+  s.version     = '1.1.1'
   s.summary     = "Ruby için Konsol Tabanı (Kararlı Sürüm)"
   s.description = "Ruby'de konsolunuz güzel bi biçime sokan kütüphane"
   s.authors     = ["Ömer Faruk Biçer"]

@@ -36,7 +36,9 @@ class RubyTaban
 
   def log_salla(sol, orta, sag)
     zaman = Time.new.strftime("%k:%M:%S")
-    zaman[" "] = "0"
+    if zaman[" "]
+      zaman[" "] = "0"
+    end
     if (!sol.is_a?(String) || !orta.is_a?(String) || !sag.is_a?(String))
       bicimlendir = "[#{zaman}]".cyan + " Sadece String Değere izin verilir".yellow
       puts bicimlendir

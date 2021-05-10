@@ -1,5 +1,19 @@
-require 'ruby_figlet'
-require 'colorize'
+begin
+  require 'colorize'
+rescue LoadError
+  system "gem install colorize"
+  puts "colorize kütüphanesi kuruldu yeniden başlatın"
+  exit
+end
+
+begin
+  require 'ruby_figlet'
+rescue LoadError
+  system "gem install ruby_figlet"
+  puts "colorize kütüphanesi kuruldu yeniden başlatın"
+  exit
+end
+
 require 'uri'
 require 'net/http'
 require 'json'
@@ -11,7 +25,6 @@ class RubyTaban
   def initialize(banner, girinti = 1)
     @banner  = banner
     @girinti = girinti
-    kutuphane_yukle()
     logo_yazdir()
     bilgi_yazdir()
   end
@@ -67,11 +80,6 @@ class RubyTaban
 
   def temizle()
     Gem.win_platform? ? (system "cls") : (system "clear")
-  end
-
-  def kutuphane_yukle()
-    system "gem install colorize"
-    system "gem install ruby_figlet"
   end
 
   def global_ip()

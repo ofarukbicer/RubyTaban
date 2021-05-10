@@ -13,6 +13,8 @@
 
 ```bash
 # Yüklemek 
+gem install ruby_figlet
+gem install colorize
 gem install RubyTaban
 ```
 

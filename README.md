@@ -21,20 +21,20 @@ gem install RubyTaban
 ```rb 
 require "RubyTaban"
 
-taban = RubyTaban.new(
+console = RubyTaban.new(
   banner  = "RubyTaban",
-  girinti = 1
+  tabs    = 1
 )
 
-taban.log_salla(12346465465465465465, "asdasdasdasdasdasdasd", "ASDSDasdasdasdasdasd")
+console.log(12346465465465465465, "asdasdasdasdasdasdasd", "ASDSDasdasdasdasdasd")
 sleep(1)
-taban.log_salla("12346465465465465465", "sadasd", "ASDSDasdasdasdasdasd")
+console.log("12346465465465465465", "sadasd", "ASDSDasdasdasdasdasd")
 sleep(1)
 
 begin
-  bakalim()
-rescue => hata
-  taban.hata_salla(hata)
+  exception()
+rescue => exception
+  console.error(exception)
 end
 ```
 

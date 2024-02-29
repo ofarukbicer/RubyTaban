@@ -26,10 +26,9 @@ class RubyTaban
 
     session       = (ENV['USERNAME'].to_s + "@" + ENV["COMPUTERNAME"].to_s).cyan.center(44)
     ip           = global_ip.yellow.center(44)
-    pc           = ENV["OS"].red.center(44)
     time_format  = ((time.strftime("%d-%m-%Y")).to_s + " | " + (time.strftime("%k:%M")).to_s).center(30)
     
-    information_text  = "\t\t#{pc}\n\t\t#{time_format.yellow}\n\n\t\t#{session}\n\t\t#{ip}"
+    information_text  = "\t\t#{time_format.yellow}\n\n\t\t#{session}\n\t\t#{ip}"
     puts information_text
     puts "\n"
   end
